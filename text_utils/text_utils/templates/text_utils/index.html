@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Home {% endblock title %}
+
+{% block css_files %} 
+<link rel="stylesheet" href="{% static "text_utils/index.css" %}">
+{% endblock css_files %}
+
+{% block content %} 
+    <h1>Welcome to Text Analyzer.</h1>
+    <p>Enter your Text below :<p>
+    <form action="/remove_punc" method="get"> 
+        <textarea id="textarea" name="text"></textarea>
+        <br></br>
+    <button type="submit"> Analyze Text </button>
+    </form>
+
+    {% endblock content %}
