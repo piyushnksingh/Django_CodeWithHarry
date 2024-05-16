@@ -10,8 +10,10 @@
 {% block content %} 
     <h1>Welcome to Text Analyzer.</h1>
     <p>Enter your Text below :<p>
-    <form action="/remove_punc" method="get"> 
+    <form action="/analyze" method="get"> 
         <textarea id="textarea" name="text"></textarea>
+        <br></br>
+        <input type="checkbox" name="remove_punc"> Remove Puncuations
         <br></br>
     <button type="submit"> Analyze Text </button>
     </form>
